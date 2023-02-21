@@ -1,0 +1,50 @@
+:root{
+    --top: 0px;
+    --top325: 325px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body{
+    overflow-x: hidden;
+    display: block;
+
+}
+
+ellipse {
+    fill: hsl(0, 0%, 90%);
+    stroke: black;
+    stroke-width: 1px;
+}
+
+#reshoot, #restart{
+    margin: 10rem auto;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    display: block;
+    color: black;
+    border: 3px solid black;
+    background-color: yellow;
+
+}
+
+#reshoot:hover, #restart:hover{
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+}
+
+#time{
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
