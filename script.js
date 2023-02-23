@@ -30,7 +30,16 @@ function shootX(valueY) {
     ball.style.top= newtop.toString(). concat("px");
     ball.style.left= left;
 
-    
+    if(-20<topInt && topInt < 20  && -125<leftInt && leftInt<-60){
+        removeCup("1");
 
+    }
+
+    if(-20<topInt && topInt < 20 && -40<leftInt && leftInt< 40) {
+        removeCup("2");
+    }
+
+    i
+                                                                    
 
 }
