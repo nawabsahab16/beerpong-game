@@ -13,3 +13,11 @@ function shootY() {
     let onclick = "shootX(' ".concat(top.toString()," ')");
     html.setAttribute("onclick", onclick);  
 }
+
+function shootX(valueY) {
+    html.setAttribute("onclick", "");
+    let top = valueY;
+    let topInt = paresInt(valueY);
+    let left = window.getComputedStyle(ball).getPropertyValue("left");
+    
+}
