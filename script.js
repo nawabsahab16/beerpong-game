@@ -54,4 +54,25 @@ function shootX(valueY) {
     if(140<topInt && topInt<180 && -45<leftInt && leftInt<45){
         removeCup("6");
     }
-}
+
+
+    setTimeout(function()) {
+        if(cupsOut.length == 6){
+            let time = timer();
+            alert("Winner!");
+            let p = document.createElement("p");
+            p.innerHTML = time + " seconds";
+            p.setAttribute("id","time");
+            document.body.appendChild(p);
+            let restartBtn = document.createElement("BUTTON");
+            restartBtn.innerHTML = "Restart";
+            restartBtn.setAttribute("onclick","location.reload()");
+            restartBtn.setAttribute("id","restart");
+            document.body.appendChild(restartBtn);
+
+
+           
+            
+            
+
+            
