@@ -39,7 +39,7 @@ function shootX(valueY) {
         removeCup("2");
     }
 
-    i
+   
                                                                     
 
 }
