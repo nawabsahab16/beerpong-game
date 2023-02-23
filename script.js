@@ -55,8 +55,7 @@ function shootX(valueY) {
         removeCup("6");
     }
 
-
-    setTimeout(function()) {
+    setTimeout(function(){
         if(cupsOut.length == 6){
             let time = timer();
             alert("Winner!");
@@ -69,10 +68,44 @@ function shootX(valueY) {
             restartBtn.setAttribute("onclick","location.reload()");
             restartBtn.setAttribute("id","restart");
             document.body.appendChild(restartBtn);
+        }else{
+            let reshootBtn = document.createElement("BUTTON");
+            reshootBtn.innerHTML = "Reshoot";
+            reshootBtn.setAttribute("onclick","reshot()");
+            reshootBtn.setAttribute("id","reshoot");
+            document.body.appendChild(reshootBtn);
+        }
+    },1000);
+}
 
+function removeCup(cup){
+    let element = "cup".concat(cup);
+    let alreadyExists = cupsOut.includes(cup);
+    if(alreadyExists==false){  
+        cupsOut.push(cup);
+    }
+    setTimeout(function(){
+ document.getElementById(element).classList.add("fadeAway");
+    },1000);
+}
 
-           
-            
-            
+function reshot(){
+    document.getElementById("reshoot").remove();
+    ball.classList.remove("Shoot");
+    ball.classList.add("shootY");
+    ball.style.top = "0px";
+    ball.style.left = "0px";
+    setTimeout(function(){
+        html.setAttribute("onclick", "shootY()"); 
+    },1000);
+}
 
-            
+var startDate = new Date();
+var startTime = startDate.getTime();
+function timer(){
+    var dateNow = new Date ();
+    var timeNow = dateNow.getTime();
+    var timeDiff = timeNow - startTime;
+    var secondsElapsed = Math.floor(timeDiff/1000);
+    return (secondsElapsed); 
+}
