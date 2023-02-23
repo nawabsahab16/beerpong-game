@@ -46,4 +46,12 @@ function shootX(valueY) {
         removeCup("4");
                                                                     
     }
+    
+
+    if(60<topInt && topInt<100 && 15<leftInt && leftInt<80){
+        removeCup("5");
+    }
+    if(140<topInt && topInt<180 && -45<leftInt && leftInt<45){
+        removeCup("6");
+    }
 }
