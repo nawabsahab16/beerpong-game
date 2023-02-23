@@ -19,5 +19,8 @@ function shootX(valueY) {
     let top = valueY;
     let topInt = paresInt(valueY);
     let left = window.getComputedStyle(ball).getPropertyValue("left");
-    
+    let leftInt = paresInt(left);
+    let newtop = topInt-325;
+    root.style.setProperty('--top', (topInt)+" px");
+    rootstyle.setProperty('--top325',  (newtop) + "px" );
 }
