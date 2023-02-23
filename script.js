@@ -39,7 +39,11 @@ function shootX(valueY) {
         removeCup("2");
     }
 
-   
+    if(-20<topInt && topInt<20 && 60<leftInt && leftInt<125){
+        removeCup("3");
+    }
+    if(60<topInt && topInt<100 && -90<leftInt && leftInt<-25){
+        removeCup("4");
                                                                     
-
+    }
 }
