@@ -23,4 +23,14 @@ function shootX(valueY) {
     let newtop = topInt-325;
     root.style.setProperty('--top', (topInt)+" px");
     rootstyle.setProperty('--top325',  (newtop) + "px" );
+
+
+    ball.classList.remove("shootX");
+    ball.classList.add("Shoot");
+    ball.style.top= newtop.toString(). concat("px");
+    ball.style.left= left;
+
+    
+
+
 }
